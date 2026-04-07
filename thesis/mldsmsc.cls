@@ -96,8 +96,10 @@
 {\titlefont \@title\par} % If your title is long, you may wish to use \huge instead of \Huge.
 \vspace*{\stretch{2}}
 {\Large \@author \par}
+\ifx\@CID\@empty\else
 \vspace*{1em}
 {\large CID: \@CID \par}
+\fi
 \vspace*{\stretch{0.5}}
 {\large Supervised by \@supervisor \par}
 \vspace*{\stretch{3}}
@@ -122,18 +124,18 @@ MSc in Machine Learning and Data Science of \\ Imperial College London}
 \newcommand*{\declarationdate}[1]{\gdef\@declarationdate{#1}}
 \newcommand*{\declarationname}[1]{\gdef\declarationname{#1}}
 
-% Plagiarism delcaration
+% Authorship statement (declaration page)
 \newcommand*{\declaration}{%
 
 \newpage
 \thispagestyle{plain}
 \hphantom{1}
 \vfill
-\noindent The work contained in this thesis is my own work unless
-otherwise stated.
-\vfill
-{Signed: {\declarationname}  \hfill} 
-{\hfill  Date: {\@declarationdate} \hfill}
+\noindent The work contained in this thesis is my own work unless otherwise stated.
+
+\vspace{1em}
+
+\noindent Submitted to Imperial College London, \@declarationdate, in partial fulfilment of the requirements for the MSc in Machine Learning and Data Science.
 \vfill
 %setting the declaration page to start on page i
 \setcounter{page}{1}

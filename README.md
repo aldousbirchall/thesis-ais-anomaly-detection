@@ -1,6 +1,31 @@
 # Interpretable Anomaly Detection on AIS Spatial Data using Generative Deep Learning
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19449726.svg)](https://doi.org/10.5281/zenodo.19449726)
+
 MSc Research Project, Imperial College London, 2023
+
+> **Published preprint:** https://doi.org/10.5281/zenodo.19449726
+
+## Citation
+
+If you use this work, please cite as:
+
+```bibtex
+@thesis{birchall2023ais,
+  title  = {Interpretable Anomaly Detection on AIS Spatial Data using Generative Deep Learning},
+  author = {Birchall, Aldous},
+  school = {Imperial College London},
+  year   = {2023},
+  month  = {September},
+  type   = {{MSc} Thesis},
+  doi    = {10.5281/zenodo.19449726},
+  url    = {https://doi.org/10.5281/zenodo.19449726}
+}
+```
+
+Or in plain text:
+
+> Birchall, A. (2023). *Interpretable Anomaly Detection on AIS Spatial Data using Generative Deep Learning* [MSc Thesis, Imperial College London]. Zenodo. https://doi.org/10.5281/zenodo.19449726
 
 ## Abstract
 
@@ -41,7 +66,12 @@ AIS vessel traffic data (~16GB) is not included due to size. Download from [Mari
 
 ## Errata
 
-The published version includes a correction to the Anomaly Metric section (Section 4.3). The original submission described the anomaly score using MSE with a sparsity-adjusted formula that masked out zero cells. The actual implementation computes MAE across all cells, normalised by the count of non-zero cells. The LaTeX source in this repository has been updated to match the code.
+The published version (Zenodo DOI [10.5281/zenodo.19449726](https://doi.org/10.5281/zenodo.19449726)) differs from the originally submitted thesis in the following ways. The substantive content, results, and conclusions are unchanged.
+
+- **Section 4.3 (Anomaly Metric):** The original submission described the anomaly score using MSE with a sparsity-adjusted formula that masked out zero cells. The actual implementation computes MAE across all cells, normalised by the count of non-zero cells. The LaTeX source has been corrected to match the code.
+- **Typographical corrections:** Minor typographical errors (missing words, missing articles, hyphenation, possessive apostrophes) have been corrected throughout the manuscript.
+- **Hyperref formatting:** Citation and cross-reference links are now rendered as coloured text rather than coloured boxes around link targets.
+- **Declaration page:** The original signature/date declaration has been replaced with a brief authorship statement appropriate for public publication.
 
 ## Acknowledgements
 

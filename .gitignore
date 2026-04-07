@@ -8,3 +8,14 @@ venv/
 data/raw/
 *.h5
 *.hdf5
+
+# LaTeX build artifacts
+thesis/*.aux
+thesis/*.bbl
+thesis/*.blg
+thesis/*.log
+thesis/*.out
+thesis/*.toc
+thesis/*.fdb_latexmk
+thesis/*.fls
+thesis/*.synctex.gz
